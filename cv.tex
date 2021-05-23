@@ -1,60 +1,25 @@
 \documentclass[]{article}
 
-\usepackage{array, comment}
-\usepackage{longtable}
-\usepackage[letterpaper, margin=.8in]{geometry}
-\usepackage{fancyhdr}
-% \usepackage{apacite}
-\usepackage{needspace}
-\pagestyle{fancy} 
-\usepackage[hyphens]{url}\urlstyle{same}
+  \input{includes/header}
 
-%\chead{\textbf{Joachim Vandekerckhove---Curriculum Vitae}}
-\fancyhead[L]{\fontsize{12}{20}\sc joachim vandekerckhove}
-\fancyhead[C]{\fontsize{12}{20}{\color{white} \today}}
-\fancyhead[R]{\fontsize{12}{20}{\sc curriculum vitae}}
-\setlength{\headheight}{20pt} 
+  \fancyhead[L]{\fontsize{12}{20}\sc joachim vandekerckhove}
+  \definecolor{primaryColor}{rgb}{.5,.0,.0}
+  \definecolor{secondaryColor}{rgb}{.5,.5,.5}
 
-
-% \renewcommand\refname{---Published works---}
-
-\title{Recent CV}
-
-\def\slist{\begin{longtable}{>{\em}p{1.25in} p{5.0in}}}
-\def\elist{\end{longtable}} 
-\def\scols{\begin{longtable}{>{\em}p{1in} p{2in} p{2.5in}}}
-\def\ecols{\end{longtable}}
-\def\swcols{\begin{longtable}{>{\em}p{1.25in} p{2.5in} p{2in}}}
-\def\ewcols{\end{longtable}}
-\def\scolss{\begin{longtable}{p{2in} p{3.5in}}}
-\def\ecolss{\end{longtable}}
-\def\scolsz{\begin{longtable}{p{5in}}}
-\def\ecolsz{\end{longtable}}
-\def\srefs{\begin{itemize}} 
-\def\i{\item[]\hspace{-2em}}
-\def\erefs{\end{itemize}} 
-%\raggedright
-%\sloppy
-
-\usepackage{xcolor}
-\usepackage{titlesec}
-% \usepackage{DejaVuSansCondensed}
-% \usepackage{bold-extra}
-
-\definecolor{Bordeaux}{rgb}{.5,.0,.0}
-\definecolor{Grey}{rgb}{.5,.5,.5}
-\titleformat*{\section}{\huge\bfseries\color{Grey}\fontfamily{phv}}
-\titleformat*{\subsection}{\large\scshape\color{Bordeaux}}
-
-\renewcommand{\textbf}[1]{{\bf\color{Bordeaux}#1}}
 
 \begin{document}
 
 \vspace{1ex}\null
 
 \subsection*{Contact information}
-Department of Cognitive Sciences\\2324 Social and Behavioral Sciences Gateway Building (SBSG)\\University of California, Irvine\\Irvine, CA 92697-5100\\[1ex]\indent\indent Phone: +1 (949) 824-5958\\\indent\indent joachim@uci.edu\\\indent\indent \url{http://www.cidlab.com/}
-%\null Joachim Vandekerckhove\\ 15 Twain\\ Irvine, CA 92697-4900\\[2ex]\indent Phone: (949) 527-8092\\\indent joachim.vandekerckhove@gmail.com\\\indent \url{http://www.cidlab.com/}
+
+    Department of Cognitive Sciences\\
+    2324 Social and Behavioral Sciences Gateway Building (SBSG)\\
+    University of California, Irvine\\
+    Irvine, CA 92697-5100\\[1ex]
+    \indent\indent Phone: +1 (949) 824-5958\\
+    \indent\indent joachim@uci.edu\\
+    \indent\indent \url{www.cidlab.com}
     
 \subsection*{Employment history}
 \slist
@@ -91,8 +56,7 @@ Department of Cognitive Sciences\\2324 Social and Behavioral Sciences Gateway Bu
   Member of the Psychometric Society\\
   Member of the European Society for Cognitive Psychology\\
   Member of the International Society for Research in Emotion\\
-  Member of the American Statistical Association\\
-  Member of Statisticians without Borders
+  Member of the American Statistical Association
 \ecolsz
 
 \newpage
@@ -102,13 +66,23 @@ Department of Cognitive Sciences\\2324 Social and Behavioral Sciences Gateway Bu
 \scolss
    Stochastic process models & Computational modeling of cognition\\
    Bayesian statistics       & Computational methods \\
-   Individual differences    & Psychometrics\\
+   Individual differences    & Psychometrics         \\
    Integrative modeling      & Data fusion\\
    Robust science            & Meta-analysis
 \ecolss
 
 \subsection*{Extramural grants}
 \slist
+  June 2021      & National Science Foundation grant \#2051186:
+  			  	   ``Exploratory and confirmatory neurocognitive modeling with latent variables.'' 
+                   36 months.  
+                   Role: \textbf{Principal Investigator} (with R.~Srinivasan).
+                   \$349,551.00\\
+  September 2019 & National Science Foundation grant \#1850849:
+  			  	   ``Critical tests of neurocognitive relationships.''  
+                   36 months.  
+                   Role: \textbf{Principal Investigator} (with R.~Srinivasan).
+                   \$674,807.00\\
   February 2018  & National Science Foundation grant \#1754205:
   			  	   ``RR: Workshop on Robust Social and Behavioral 
                    Sciences.''  
@@ -119,13 +93,13 @@ Department of Cognitive Sciences\\2324 Social and Behavioral Sciences Gateway Bu
   			  	   ``Estimation of unidentified cognitive models 
                    with physiological data.''  
                    24 months.  
-                   Role: \textbf{Principal Investigator.}  
+                   Role: \textbf{Principal Investigator} (with R.~Srinivasan).
                    \$337,028.00\\
   April 2016     & National Science Foundation: Graduate Research
   				   Fellowship Award (DGE-1321846; Awarded to advisee
                    Alexander Etz).  
                    36 months.  
-                   Role: \textbf{Adviser.}
+                   Role: \textbf{Adviser}.
                    \$132,000.00\\
   January 2016   & William K. and Katherine W. Estes Fund
   				   (Psychonomic Society and Association for
@@ -149,7 +123,7 @@ Department of Cognitive Sciences\\2324 Social and Behavioral Sciences Gateway Bu
   July 2015      & National Science Foundation: ``Support for the
   				   Applications of Mathematical Psychology to
                    Industry meeting''. 
-                   Role: \textbf{Organizer.} 
+                   Role: \textbf{Organizer} (with J.~Trueblood). 
                    \$5,000.00\\
   June 2014      & John Templeton Foundation grant \#48192: ``A
   				   formal modeling framework for the dynamics of
@@ -177,23 +151,24 @@ Department of Cognitive Sciences\\2324 Social and Behavioral Sciences Gateway Bu
   				   research grant: ``Dynamic cognitive psychometrics.'' 
                    36 months.  
                    \$200,000.00\\
-  August 2010    & Research Foundation---Flanders (FWO) travel
-  				   grant: ``Fitting a self-regulating accumulator
-                   model of human decision-making''.  
-                   \$3,000.00\\
+%  August 2010    & Research Foundation---Flanders (FWO) travel
+%  				   grant: ``Fitting a self-regulating accumulator
+%                   model of human decision-making''.  
+%                   \$3,000.00\\
   October 2009   & University of Leuven Research Council
   				   postdoctoral research grant: ``A statistical
                    framework for Approximate Bayesian Computation.''
                    12 months.  
                    \$65,000.00\\
-  September 2008 & Research Foundation---Flanders (FWO) travel
-  			       grant: ``A Bayesian treatment of the LATER model
-                   for simple response times''. 
-                   \$2,500.00\\
-  November 2007  & Research Foundation---Flanders (FWO) travel
-  				   grant: ``Hierarchical diffusion models for 
-                   two-choice response times''.  
-                   \$3,000.00\\[4ex]
+%  September 2008 & Research Foundation---Flanders (FWO) travel
+%  			       grant: ``A Bayesian treatment of the LATER model
+%                   for simple response times''. 
+%                   \$2,500.00\\
+%  November 2007  & Research Foundation---Flanders (FWO) travel
+%  				   grant: ``Hierarchical diffusion models for 
+%                   two-choice response times''.  
+%                   \$3,000.00
+\\[4ex]
 \elist
 
 \subsection*{Intramural grants}
@@ -237,20 +212,15 @@ Department of Cognitive Sciences\\2324 Social and Behavioral Sciences Gateway Bu
 
 \subsection*{Professional recognitions}
 \slist
-  December 2016  & I won UC Irvine's 2016 Social Science Associate 
-                   Professor Research Award (\$5,000)\\
+  July 2020      & UC Irvine School of Social Sciences Outstanding Teaching Award (Spring 2020)\\
+  December 2016  & UC Irvine Social Science Assistant Professor Research Award (\$5,000)\\
   December 2016  & My student Beth Baribault won the \textit{Berkeley
   				   Initiative for Transparency in the Social
                    Sciences'} Leamer-Rosenthal Prize for Open 
                    Social Science for her work under my supervision (\$10,000)\\
-%  September 2015 & I received recognition for my ``excellent
-%  				   teaching evaluations'' from the Associate Dean
-%                   for Undergraduate Studies\\
-  July 2014      & I won the \textit{Society for Mathematical Psychology}'s 
+  September 2015 & UC Irvine School of Social Sciences Outstanding Teaching Award (Spring 2015)\\
+  July 2014      & \textit{Society for Mathematical Psychology}'s 
                    William K. Estes Early Career Award (\$1,250)\\
-%  September 2013 & An article in \textit{Emotion} (Pe, Vandekerckhove, \&
-%  				   Kuppens, 2013) on which I am the corresponding
-%                   author was recommended on ``Faculty of 1000'' (f1000.com)
 \elist
 
 \newcommand{\vdkh}{\textbf{Vandekerckhove, J.}}
@@ -286,12 +256,16 @@ Department of Cognitive Sciences\\2324 Social and Behavioral Sciences Gateway Bu
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%% PUBLICATIONS %%%%%%%%%
-   \input{overleafcv.tex}
+   \input{publications.tex}
    
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection*{Software}
 \srefs
+\i \vdkh{} (2020).
+\newblock MathPsych Virtual [Website, software, and manual]. An online conference venue for events organized by the Society for Mathematical Psychology.
+\newblock Available via \url{mathpsych.org}
+  
 \i \vdkh{} (2017).
 \newblock Build-A-Bayes [Educational online app].
 \newblock Available via \url{osf.io/mvp53}
@@ -344,24 +318,28 @@ Department of Cognitive Sciences\\2324 Social and Behavioral Sciences Gateway Bu
 \newblock  Extensions and applications of the diffusion model for two-choice response times. Unpublished doctoral dissertation. 
 \erefs
 
+\subsection*{Other publications}
+\srefs
+\i \vdkh{} (2019, December).   \newblock Freedom of choice vs.\ undisclosed flexibility: Researcher degrees of freedom in model-based inference. {\em Psychonomic Society Featured Content.}
+\newblock Via \hyperlink{featuredcontent.psychonomic.org}{featuredcontent.psychonomic.org}
+\i \vdkh{} (2019, September).  \newblock On being SMARTer than Vincent. {\em Psychonomic Society Featured Content.}
+\newblock Via \hyperlink{featuredcontent.psychonomic.org}{featuredcontent.psychonomic.org}
+\i \vdkh{} (2019, August).     \newblock Detecting Bigfoot vs.\ brain waves: New approaches to multivariate data analysis. {\em Psychonomic Society Featured Content.}
+\newblock Via \hyperlink{featuredcontent.psychonomic.org}{featuredcontent.psychonomic.org}
+\i \vdkh{} (2019, May).        \newblock You can obscure a lot by just plotting: Cognitive science of data presentation. {\em Psychonomic Society Featured Content.}
+\newblock Via \hyperlink{featuredcontent.psychonomic.org}{featuredcontent.psychonomic.org}
+\i \vdkh{} (2019, February).   \newblock Weighting or besting? Speeded multi-attribute choice  [Original title: The weighting is the hardest part]. {\em Psychonomic Society Featured Content.}
+\newblock Via \hyperlink{featuredcontent.psychonomic.org}{featuredcontent.psychonomic.org}
+\i \vdkh{} (2018, February).   \newblock From classical to new to real: A brief history of \#BayesInPsych. {\em Psychonomic Society Featured Content.}
+\newblock Via \hyperlink{featuredcontent.psychonomic.org}{featuredcontent.psychonomic.org}
+\erefs
 
-%\subsection*{Articles under review or in preparation}
-%\srefs
-%\i Baribault, B., \& \vdkh{} (in preparation). 
-%\newblock A tutorial on cognitive latent variable modeling.
-%\i Wilson, J., Baribault, B., \& \vdkh{} (in preparation).
-%\newblock Chance level performance in expert diagnoses with applied kinesiology.
-%\i Kupitz, C., %Buschkuehl, M., Jaeggi, S., Jonides, J., Shah, P., 
-%\& \vdkh{} (in preparation). 
-%\newblock A cognitive latent variable approach to the transfer-of-training effect. 
-%\erefs
 
 \subsection*{Media}
 \srefs
-  \item[--] I maintain \textbf{cidlab.com} to distribute research results and publications; \textbf{beingwellproject.com} for public outreach regarding positive-psychology research; and various other websites to announce events and workshops.
+  \item[--] I maintain \textbf{cidlab.com} to distribute research results and publications; and various other websites to announce events and workshops.
   \item[--] My lab provides support for \textbf{The Bayes Factor}, a podcast on Bayesian inference and the people behind it.
   \item[--] My research has featured in numerous media outlets, including the \textit{New York Times}, \textit{National Public Radio}, the \textit{Chronicle of Higher Education}, \textit{WIRED Magazine}, \textit{Science News}, and \textit{Nature News}.
-%) in relation to my work on the Reproducibility Project: Psychology, and by BYU radio regarding my work on felt love.
 % \item[--] My work on the dynamics of subjective well-being was posted on the UCI News service and widely circulated, and my work on model complexity was featured on the Psychonomic Society's blog (\url{http://www.psychonomic.org/news/news.asp?id=316843}).
 % \item[--] My advocacy for more robust science was mentioned by President Marcia McNutt of the National Academy of Sciences in a letter to the editor of the \textit{Chronicle of Higher Education} (\url{http://www.chronicle.com/blogs/letters/scientists-dont-view-reproducibility-as-risky-business/}).
 \erefs
@@ -371,48 +349,59 @@ Department of Cognitive Sciences\\2324 Social and Behavioral Sciences Gateway Bu
 
 \subsection*{Graduate advising}
 \slist
-2016 -- present & Alexander Etz                           \\
-2014 -- present & Colin Kupitz
- \\
-2014 -- present & Beth Baribault                          \\
-2013 -- present & Maime Guan       --- with M.~D.~Lee     \\
-2013 -- 2018 & Irina Danileiko  --- with M.~D.~Lee     \\
-2012 -- 2017    & Michael D.~Nunez --- with R.~Srinivasan
+2016 -- present & Alexander Etz    (chair)\\
+2014 -- 2020    & Colin Kupitz     (chair)              --- now at Air Force Research Labs\\
+2014 -- 2019    & Beth Baribault   (chair)              --- now at UC Berkeley \\
+2013 -- 2019    & Maime Guan       (with M.~D.~Lee)     --- now at Apple, Inc. \\
+2013 -- 2018    & Irina Danileiko  (with M.~D.~Lee)     --- now at Niantic, Inc. \\
+2012 -- 2017    & Michael D.~Nunez (with R.~Srinivasan) --- now at UC Irvine
 \elist
 
 \subsection*{Other mentoring activities}
 \slist
-2017 -- present & Michael D.~Nunez (Associate project scientist) --- with R.~Srinivasan\\
-2018            & Ravi Selker (Assistant project scientist) --- with M.~D.~Lee 
+2017 -- 2019,   & \\
+\hspace{0.5em} 2020 -- present & Assistant project scientist Michael D.~Nunez (with R.~Srinivasan)\\
+2018            & Assistant project scientist Ravi Selker      (with M.~D.~Lee) \\
+2016 -- 2017    & Visiting researcher Anna-Lena Schubert\\
+2013 -- 2014    & Research specialist Dominik Wabersich
 \elist
 
 \subsection*{Departmental service}
 \slist
-2017 -- present    & School of Social Sciences Representative to the Senate Assembly\\
-2017 -- present    & Member of the Faculty Advisory Committee for Research Cyberinfrastructure\\
 2017 -- present    & Graduate Director of Cognitive Sciences\\
-2017 -- present    & Chair of the Graduate Admissions Committee\\
+2017 -- present    & Chair of the Graduate Admissions Committee of Cognitive Sciences\\
 2013 -- 2017       & Undergraduate Director of B.S. 
 					 Cognitive Sciences\\
-2012 -- present    & Academic personnel committee member (4) 
+2012 -- present    & Academic personnel committee member (5) 
 					 and chair (2)\\
 2012 -- present    & Search committee member (4) and chair (2)\\
-2011 -- present    & Doctoral committees (4), 
-				     advancement committees (10),
-                     concentration exams (7)
+2011 -- present    & Doctoral committees (6), 
+				     advancement committees (11),
+                     concentration exams (8)
 \elist
+
+
+\subsection*{Other service}
+\slist
+2019 -- present    & \textbf{Conference Chair} of the Society for Mathematical Psychology\\
+2019 -- present    & \textbf{Executive Board Member} (\emph{ex officio}) of the Society for Mathematical Psychology\\
+2017 -- present    & \textbf{Representative} (elected) of the School of Social Sciences to the Senate Assembly\\
+2017 -- present    & \textbf{Committee Member}, Faculty Advisory Committee for Research Cyberinfrastructure
+\elist
+
 
 \subsection*{UCI Teaching}
 \slist
-Undergraduate & Advanced experimental methods in psychology 
-                (lecture and lab);
-               Honors advanced experimental methods in 
-                psychology (lecture and lab);
-               Individual study
-               \\
-Graduate      & Software development;
-               Bayesian inference;
-               Algorithmic statistics
+Undergraduate & Probability and Statistics in Psychology;
+                Advanced experimental methods in psychology (lecture and lab);
+                Honors advanced experimental methods in psychology (lecture and lab);
+                Individual study \\
+Graduate      & Algorithmic statistics;
+                Bayesian inference;
+                Computational statistics;
+                Social data science;
+                Software development;
+                Transparent and reproducible science
 \elist
 
 \subsection*{External teaching}
@@ -448,7 +437,8 @@ September 2010 & \textbf{Invited lecturer}, University of Zurich doctoral
 
 \subsection*{Editorial and Ad-hoc reviewer service}
 \slist
-2018 -- present & \textbf{Associate editor}, \textit{Psychonomic Society Digital Content}\\
+2020 -- present & \textbf{Associate editor}, \textit{Psychonomic Bulletin \& Review}\\
+2018 -- 2019    & \textbf{Associate editor}, \textit{Psychonomic Society Digital Content}\\
 2017 -- present & \textbf{Editorial board member}, \textit{Advances in Methods 
                   and Practices in Psychological Science}\\
 2015 -- 2018    & \textbf{Guest lead editor}, 
@@ -457,9 +447,9 @@ September 2010 & \textbf{Invited lecturer}, University of Zurich doctoral
 2016 -- 2018    & \textbf{Panelist}, \textit{National Science Foundation},
 				  Advisory Panel for the Methodology, Measurement,
                   and Statistics (MMS) Program\\
-2016 -- present & \textbf{Consulting editor}, 
+2016 -- 2019    & \textbf{Consulting editor}, 
 			      \textit{Behavior Research Methods}\\
-2016 -- present & \textbf{Tutorial editor}, 
+2016 -- 2018    & \textbf{Tutorial editor}, 
 				  \textit{Journal of Mathematical Psychology}\\
 2014 -- 2016    & \textbf{Consulting editor}, 
 			      \textit{Journal of Mathematical Psychology}\\
@@ -471,9 +461,11 @@ September 2010 & \textbf{Invited lecturer}, University of Zurich doctoral
 
 \subsection*{Events organized}
 \slist
+July 2021       & \textbf{Organizer}, ``54th Annual Meeting of the Society for Mathematical Psychology,'' a virtual conference\\
+July 2020       & \textbf{Organizer}, ``53rd Annual Meeting of the Society for Mathematical Psychology,'' \sout{Toronto, Ontario} a virtual conference\\
 July 2019       & \textbf{Organizer}, ``52nd Annual Meeting of the Society for Mathematical Psychology,'' Montreal, Quebec\\
 July 2018       & \textbf{Organizer} (with R.~Shiffrin), ``On the relationship between scientific practice and statistical practice,'' Madison, WI\\
-July 2018       & \textbf{Organizer}, ``Workshop on robust social science,'' Orlando, FL\\
+July 2018       & \textbf{Organizer} (with M.~D.~Lee), ``Workshop on robust social science,'' Orlando, FL\\
 May 2017        & \textbf{Organizer} (with Z.~Oravecz),
 				  ``Models and methods of well-being,'' 
                   Boston, MA\\
@@ -521,19 +513,9 @@ August 2010     & \textbf{Organizer}, ``Practical applications of models for
            Mathematical Psychology. 
  \elist
 
- 
-%\subsection*{References}
-%\scolss
-%  Amy Criss            & Syracuse University\\
-%  Andrew Heathcote     & University of Tasmania, TAS, Australia\\
-%  Michael D. Lee       & University of California, Irvine\\
-%  Stephan Lewandowsky  & University of Bristol, UK\\
-%  Jeff Rouder          & University of Missouri\\
-%  Francis Tuerlinckx   & University of Leuven, Belgium\\
-%  Eric-Jan Wagenmakers & University of Amsterdam, the Netherlands
-%\ecolss
 
-% \input{research}
-% \input{teaching}
+
+ %\input{includes/research}
+ %\input{includes/teaching}
 
 \end{document}

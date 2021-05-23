@@ -1,0 +1,47 @@
+\usepackage{array, comment}
+\usepackage{longtable}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{needspace}
+\pagestyle{fancy} 
+
+\usepackage[normalem]{ulem}
+
+\usepackage[hyphens]{url}\urlstyle{same}
+\newcommand{\hyperlink}[2]{\url{#2}}
+\newcommand{\doi}[1]{doi:\url{#1}}
+
+%\chead{\textbf{Joachim Vandekerckhove---Curriculum Vitae}}
+\fancyhead[C]{\fontsize{12}{20}{\color{white} \today}}
+\fancyhead[R]{\fontsize{12}{20}{\sc curriculum vitae}}
+\setlength{\headheight}{20pt} 
+
+\raggedbottom 
+
+\title{Recent CV}
+
+\def\slist{\begin{longtable}{>{\em}p{1.15in} p{4.995in}}}
+\def\elist{\end{longtable}} 
+\def\scols{\begin{longtable}{>{\em}p{1in} p{2in} p{2.5in}}}
+\def\ecols{\end{longtable}}
+\def\swcols{\begin{longtable}{>{\em}p{1.15in} p{2.5in} p{2in}}}
+\def\ewcols{\end{longtable}}
+\def\scolss{\begin{longtable}{p{2in} p{3.5in}}}
+\def\ecolss{\end{longtable}}
+\def\scolsz{\begin{longtable}{p{5in}}}
+\def\ecolsz{\end{longtable}}
+\def\srefs{\begin{itemize}} 
+\def\i{\item[]\hspace{-2em}}
+\def\erefs{\end{itemize}} 
+%\raggedright
+%\sloppy
+
+\usepackage{xcolor}
+\usepackage{titlesec}
+% \usepackage{DejaVuSansCondensed}
+% \usepackage{bold-extra}
+
+\titleformat*{\section}{\huge\bfseries\color{secondaryColor}\fontfamily{phv}}
+\titleformat*{\subsection}{\Needspace{0.10\textheight}\large\scshape\color{primaryColor}}
+
+\renewcommand{\textbf}[1]{{\bf\color{primaryColor}#1}}
